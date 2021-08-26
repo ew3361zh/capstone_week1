@@ -9,13 +9,16 @@ name = input("What is your name? ")
 birthday_month = input("What month were you born in? ")
 # print hello message using name variable info
 print(f'Hello, {name}, so nice to meet you!')
-# print number of letters using
+# print number of letters using len function
 print(f'You have {len(name)} letters in your name')
-if birthday_month.lower() == 'august':
-    print('Happy birthday month to you!')
 
+# if birthday_month.lower() == 'august':
+#     print('Happy birthday month to you!')
+
+# import library to get python to note what month it currently is
 from time import strftime
 current_month = strftime('%B')
 
+# if the current month is the same as the user's birthday month, print a special bday message to them
 if current_month.lower() == birthday_month.lower():
     print('it\'s currently your birthday month!')
